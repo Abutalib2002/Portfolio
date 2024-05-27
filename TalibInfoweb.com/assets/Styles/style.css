@@ -1,0 +1,88 @@
+/* Set Default elements */
+:root {
+    --maroon : #4F1898;
+    --sandal : #dfe9fc;
+    --white : #fff;
+
+}
+
+/* Set All 0 for spacing  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set Body for text and more  */
+
+body {
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: calc(0.8vw + 4px);
+    background-color: var(--sandal);
+}
+/* Set Heading styles  */
+.heading {
+    color: var(--maroon);
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 700;
+    line-height: 1.3rem;
+    letter-spacing: 2px;
+}
+
+/* Link styles */
+.link {
+    text-decoration: none;
+    color: var(--maroon);
+}
+
+/* Odd Bg */
+.odd {
+    background-color: var(--maroon);
+}
+
+/* Navlink Styles */
+.nav-link{
+    border: 3px solid transparent;
+    border-radius: 30px;
+    margin-inline: 8px !important;
+    color:var(--sandal) !important ;
+}
+ .nav-link:hover , .active{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navbar-brand  img {
+    width: 100px !important;
+}
+
+.hero {
+    margin-top: 6.5rem;
+    background-image: linear-gradient(
+  50deg,
+  hsl(219deg 83% 93%) 1%,
+  hsl(220deg 75% 90%) 33%,
+  hsl(221deg 71% 88%) 42%,
+  hsl(222deg 67% 85%) 46%,
+  hsl(224deg 65% 82%) 49%,
+  hsl(225deg 62% 80%) 51%,
+  hsl(226deg 60% 77%) 52%,
+  hsl(228deg 58% 75%) 52%,
+  hsl(229deg 56% 72%) 52%,
+  hsl(231deg 54% 70%) 52%,
+  hsl(233deg 52% 68%) 52%,
+  hsl(234deg 50% 66%) 52%,
+  hsl(237deg 48% 63%) 51%,
+  hsl(239deg 46% 61%) 51%,
+  hsl(242deg 44% 59%) 51%,
+  hsl(245deg 43% 56%) 52%,
+  hsl(248deg 42% 52%) 52%,
+  hsl(251deg 42% 49%) 54%,
+  hsl(254deg 47% 46%) 57%,
+  hsl(258deg 53% 42%) 61%,
+  hsl(261deg 61% 39%) 69%,
+  hsl(266deg 73% 35%) 99%
+);
+}
