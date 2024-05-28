@@ -1,13 +1,13 @@
 /* Set Default elements */
 :root {
-    --maroon : #4F1898;
-    --sandal : #dfe9fc;
-    --white : #fff;
+    --maroon: #4F1898;
+    --sandal: #dfe9fc;
+    --white: #fff;
 
 }
 
 /* Set All 0 for spacing  */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,70 +19,126 @@ body {
     font-family: "Sedan SC", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: calc(0.8vw + 4px);
+    font-size: 18px;
     background-color: var(--sandal);
 }
+
 /* Set Heading styles  */
 .heading {
-    color: var(--maroon);
     font-family: "Ubuntu Sans Mono", monospace;
     font-weight: 700;
-    line-height: 1.3rem;
+    line-height: 4rem;
     letter-spacing: 2px;
-}
-
-/* Link styles */
-.link {
-    text-decoration: none;
-    color: var(--maroon);
-}
-
-/* Odd Bg */
-.odd {
-    background-color: var(--maroon);
-}
-
-/* Navlink Styles */
-.nav-link{
-    border: 3px solid transparent;
-    border-radius: 30px;
-    margin-inline: 8px !important;
-    color:var(--sandal) !important ;
-}
- .nav-link:hover , .active{
     text-decoration: underline;
     text-underline-offset: 8px;
 }
 
-.navbar-brand  img {
-    width: 100px !important;
+/* Link styles */
+.link,
+.odd-text {
+    text-decoration: none;
+    color: var(--maroon) !important;
+}
+
+.odd-text {
+    color: var(--maroon) !important;
+}
+
+/* Odd Bg */
+.odd,
+.btn-primary {
+    background-color: var(--maroon);
+}
+
+.btn-primary:hover {
+    background-color: unset;
+    box-shadow: none;
+    outline: none;
+    border: 2px solid var(--maroon);
+    color: var(--maroon) !important;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: var(--white) !important;
+    background-color: unset;
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    box-shadow: none;
+    outline: none;
+    border: 2px solid var(--maroon);
+    color: var(--maroon) !important;
+}
+
+
+.btn-secondary:focus,
+.btn-primary:focus {
+    border: unset;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.odd-heading {
+    color: var(--white) !important;
+}
+
+h1 {
+    font-size: 55px;
+    text-decoration: none !important;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* Navlink Styles */
+.nav-link {
+    border: 3px solid transparent;
+    border-radius: 30px;
+    margin-inline: 8px !important;
+    color: var(--sandal) !important;
+}
+
+.nav-link:hover,
+.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navbar-brand {
+    width: clamp(200px, 70%, 300px);
+}
+
+.navbar-brand img,
+.hero-img {
+    width: clamp(200px, 100%, 350px);
 }
 
 .hero {
-    margin-top: 6.5rem;
-    background-image: linear-gradient(
-  50deg,
-  hsl(219deg 83% 93%) 1%,
-  hsl(220deg 75% 90%) 33%,
-  hsl(221deg 71% 88%) 42%,
-  hsl(222deg 67% 85%) 46%,
-  hsl(224deg 65% 82%) 49%,
-  hsl(225deg 62% 80%) 51%,
-  hsl(226deg 60% 77%) 52%,
-  hsl(228deg 58% 75%) 52%,
-  hsl(229deg 56% 72%) 52%,
-  hsl(231deg 54% 70%) 52%,
-  hsl(233deg 52% 68%) 52%,
-  hsl(234deg 50% 66%) 52%,
-  hsl(237deg 48% 63%) 51%,
-  hsl(239deg 46% 61%) 51%,
-  hsl(242deg 44% 59%) 51%,
-  hsl(245deg 43% 56%) 52%,
-  hsl(248deg 42% 52%) 52%,
-  hsl(251deg 42% 49%) 54%,
-  hsl(254deg 47% 46%) 57%,
-  hsl(258deg 53% 42%) 61%,
-  hsl(261deg 61% 39%) 69%,
-  hsl(266deg 73% 35%) 99%
-);
+    margin-top: clamp(4rem, 5.5rem, 6.5rem);
+    background-image: linear-gradient(50deg,
+            hsl(219deg 83% 93%) 1%,
+            hsl(220deg 75% 90%) 33%,
+            hsl(221deg 71% 88%) 42%,
+            hsl(222deg 67% 85%) 46%,
+            hsl(224deg 65% 82%) 49%,
+            hsl(225deg 62% 80%) 51%,
+            hsl(226deg 60% 77%) 52%,
+            hsl(228deg 58% 75%) 52%,
+            hsl(229deg 56% 72%) 52%,
+            hsl(231deg 54% 70%) 52%,
+            hsl(233deg 52% 68%) 52%,
+            hsl(234deg 50% 66%) 52%,
+            hsl(237deg 48% 63%) 51%,
+            hsl(239deg 46% 61%) 51%,
+            hsl(242deg 44% 59%) 51%,
+            hsl(245deg 43% 56%) 52%,
+            hsl(248deg 42% 52%) 52%,
+            hsl(251deg 42% 49%) 54%,
+            hsl(254deg 47% 46%) 57%,
+            hsl(258deg 53% 42%) 61%,
+            hsl(261deg 61% 39%) 69%,
+            hsl(266deg 73% 35%) 99%);
 }
